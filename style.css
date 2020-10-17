@@ -4,53 +4,63 @@
     box-sizing: border-box;
 }
 .calendar{
-    width: 300px;
+    width: 400px;
     margin: 0 auto;
     margin-top: 20px;
     border: 1px solid #333333;
     
 }
-.header{
+.calendar-header{
     width: 100%;
-    padding: 5px 10px;
+    padding: 30px 10px;
     display: flex;
+    font-size: 24px;
+    background-color: rgb(28, 156, 216);
+    color: #fff;
 }
-.header .left{
+.calendar-header .calendar-year{
     width: 70%;
+    text-align: center;
 }
-.header .right{
-    width: 30%;
-    display: flex;
-    justify-content: space-around;
-}
-.header .right a{
+.calendar-header .calendar-arrow{
+    width: 15%;
+    text-align: center;
     color: #333333;
 }
-.week{
+.calendar-header a{
+    color: #333333;
+}
+.calendar-week{
     width: 100%;
     display: flex;
     justify-content: space-between;
     text-align: center;
     margin: 10px 0;
 }
-.week > div{
+.calendar-week > div{
     width: 12%;
-
+    
 }
-.date{
+.calendar-date{
     width: 100%;
     text-align: center;
 }
-.date .date_content{
+.calendar-date .date_content{
     width: 100%;
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
     margin: 10px 0;
 }
-.date .date_content > div{
+.calendar-date .date_content > div{
     width: 13%;
+    padding: 10px 0;
+    cursor: pointer;
 }
-.date .date_content > .nonMonth{
+.nextMonth, .prevMonth{
     color: #999999;
+}
+.current-date{
+    background-color: rgb(42, 42, 158);
+    color: #fff;
 }
