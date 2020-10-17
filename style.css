@@ -1,0 +1,56 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.calendar{
+    width: 300px;
+    margin: 0 auto;
+    margin-top: 20px;
+    border: 1px solid #333333;
+    
+}
+.header{
+    width: 100%;
+    padding: 5px 10px;
+    display: flex;
+}
+.header .left{
+    width: 70%;
+}
+.header .right{
+    width: 30%;
+    display: flex;
+    justify-content: space-around;
+}
+.header .right a{
+    color: #333333;
+}
+.week{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    margin: 10px 0;
+}
+.week > div{
+    width: 12%;
+
+}
+.date{
+    width: 100%;
+    text-align: center;
+}
+.date .date_content{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin: 10px 0;
+}
+.date .date_content > div{
+    width: 13%;
+}
+.date .date_content > .nonMonth{
+    color: #999999;
+}
