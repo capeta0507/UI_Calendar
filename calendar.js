@@ -1,8 +1,8 @@
 const date = new Date();
 
 date.setDate(1);
-date.setYear(2019);
-date.setMonth(5);
+// date.setYear(2019);
+// date.setMonth(5);
 // console.log(date.getDay())
 
 const monthDays = document.querySelector('#calendar-date-div');
@@ -13,10 +13,10 @@ const lastDay = new Date(date.getFullYear(),date.getMonth() + 1, 0).getDate();
 const prevLastDay = new Date(date.getFullYear(),date.getMonth(), 0).getDate();
 // console.log(prevLastDay)
 
-const firstDayIdx = date.getDay()
+const firstDayIdx = date.getDay() - 1
 
 const lastDayIdx = new Date(date.getFullYear(),date.getMonth() + 1, 0).getDay();
-const nextDays = 7 - lastDayIdx - 1
+const nextDays = 7 - lastDayIdx
 
 const months = [
     "01",
