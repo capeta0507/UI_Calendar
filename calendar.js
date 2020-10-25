@@ -3,6 +3,8 @@ let date = new Date();
 // console.log('newday', newDay)
 // console.log('星期', newDay.getDay())
 // console.log('date', date);
+let this_year = date.getFullYear()
+console.log(date.getFullYear());
 let renderCalendar = () => {
     // console.log('date', date)
     date.setDate(1);
@@ -17,7 +19,6 @@ let renderCalendar = () => {
     
     // 本月1號星期
     let firstDayIdx = date.getDay();
-    console.log('型態', typeof firstDayIdx)
     if(firstDayIdx == 0){
         firstDayIdx = 7;
     }
@@ -52,6 +53,8 @@ let renderCalendar = () => {
 
     document.getElementById('myMonth').innerHTML = months[date.getMonth()]
     let myThisYear = date.getFullYear()
+    console.log('this_year', this_year);
+    console.log('myThisYear', myThisYear);
     // myThisYear = myThisYear[3]
     document.getElementById('myYear').innerHTML = myThisYear;
 
@@ -63,7 +66,7 @@ let renderCalendar = () => {
     }
 
     for(let i = 1;i <= current_lastDay;i++){
-        if(i === new Date().getDate() && date.getMonth() === new Date().getMonth()){
+        if(i === new Date().getDate() && date.getMonth() === new Date().getMonth() && myThisYear == this_year){
             days += `<div class="current-date">${i}</div>`
         } else {
             days += `<div>${i}</div>`
@@ -71,7 +74,9 @@ let renderCalendar = () => {
     }
 
     for(let y = 1;y <= nextDays;y++){
-        days += `<div class="nextMonth">${y}</div>`;
+        if(nextDays !== 7){
+            days += `<div class="nextMonth">${y}</div>`;
+        }
         // monthDays.innerHTML = days;
     }
     $('#calendar-date-div').html(days)
