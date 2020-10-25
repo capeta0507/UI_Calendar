@@ -4,37 +4,37 @@ let date = new Date();
 // console.log('星期', newDay.getDay())
 // console.log('date', date);
 let this_year = date.getFullYear()
-console.log(date.getFullYear());
+// console.log(date.getFullYear());
 let renderCalendar = () => {
     // console.log('date', date)
     date.setDate(1);
     // date.setYear(2019);
     // date.setMonth(5);
     // console.log(date.getDay())
-    console.log('date', date);
+    // console.log('date', date);
 
     // 本月最後一天
     let current_lastDay = new Date(date.getFullYear(),date.getMonth() + 1, 0).getDate();
-    console.log('本月 lastDay', current_lastDay);
+    // console.log('本月 lastDay', current_lastDay);
     
     // 本月1號星期
     let firstDayIdx = date.getDay();
     if(firstDayIdx == 0){
         firstDayIdx = 7;
     }
-    console.log('本月1號星期', firstDayIdx);
+    // console.log('本月1號星期', firstDayIdx);
 
     // 上個月最後一日
     let prevLastDay = new Date(date.getFullYear(),date.getMonth(), 0).getDate();
-    console.log('上月 lastDay', prevLastDay);
+    // console.log('上月 lastDay', prevLastDay);
 
     // 本月月底星期
     let lastDayIdx = new Date(date.getFullYear(),date.getMonth() + 1, 0).getDay();
-    console.log('本月月底星期', lastDayIdx);
+    // console.log('本月月底星期', lastDayIdx);
 
     // 下個月預留天數
     let nextDays = 7 - lastDayIdx;
-    console.log('下個月剩餘天數', nextDays);
+    // console.log('下個月剩餘天數', nextDays);
 
     let months = [
         "01",
@@ -53,8 +53,8 @@ let renderCalendar = () => {
 
     document.getElementById('myMonth').innerHTML = months[date.getMonth()]
     let myThisYear = date.getFullYear()
-    console.log('this_year', this_year);
-    console.log('myThisYear', myThisYear);
+    // console.log('this_year', this_year);
+    // console.log('myThisYear', myThisYear);
     // myThisYear = myThisYear[3]
     document.getElementById('myYear').innerHTML = myThisYear;
 
