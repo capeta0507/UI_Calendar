@@ -60,7 +60,6 @@ let renderCalendar = () => {
 
     let days = ''
 
-    console.log('firstDayIdx', firstDayIdx)
     for(let x = (firstDayIdx - 1); x>0;x--){
         days += `<div class="prevMonth">${prevLastDay - x + 1}</div>`
     }
