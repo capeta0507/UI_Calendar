@@ -15,7 +15,7 @@
     width: 10%;
     text-align: center;
     font-size: 20px;
-    padding: 30px 0;
+    padding: 20px 0;
     background-color: red;
     box-shadow: 0 0 10px #000;
     cursor: pointer;
@@ -24,11 +24,11 @@
     width: 10%;
     text-align: center;
     font-size: 20px;
-    padding: 30px 0;
+    padding: 20px 0;
     cursor: pointer;
 }
 .mycanlander{
-    width: 900px;
+    width: 1024px;
     margin: 0 auto;
     /* border: 2px solid #888888; */
     margin-top: 20px;
@@ -54,14 +54,14 @@
     border-right: 1px solid #888888; */
 }
 .week_block{
-    width: 95%;
+    width: 100%;
     margin: 0 auto;
     display: flex;
     flex-wrap: wrap;
     /* border: 1px solid black; */
 }
 .calander_day{
-    width: 122px;
+    width: 146.2px;
     height: 50px;
     line-height: 50px;
     text-align: center;
@@ -70,16 +70,15 @@
     /* border: 1px solid #888888; */
 }
 .calander_block{
-    width: 95%;
+    width: 100%;
     margin: 0 auto;
     display: flex;
     flex-wrap: wrap;
-    margin-top: 2.5%;
     background-color: #fff3f3;
 }
 .calander_date{
-    width: 122px;
-    height: 120px;
+    width: 146.2px;
+    height: 150px;
     color: #555555;
     border: 1px solid #e7d7d7;
     cursor: pointer;
